@@ -103,8 +103,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libstdc++_vendor \
-    libgui_vendor \
-    OpenCamera
+    libgui_vendor
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -220,10 +219,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.bengal
 
-# KSU
-PRODUCT_PACKAGES += \
-    KSUManager
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
@@ -317,7 +312,9 @@ PRODUCT_PACKAGES += \
 
 # Package Mgmt
 PRODUCT_PACKAGES += \
-    RemovePackages
+#   RemovePackages \ (Disabled until prebuilts are worked out, or maybe even after)
+    KSUManager \
+    OpenCamera
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
