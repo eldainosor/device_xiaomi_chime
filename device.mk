@@ -313,7 +313,6 @@ PRODUCT_PACKAGES += \
 # Package Mgmt
 PRODUCT_PACKAGES += \
 #   RemovePackages \ (Disabled until prebuilts are worked out, or maybe even after)
-    KSUManager \
     OpenCamera
 
 # Partitions
